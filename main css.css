@@ -1,5 +1,5 @@
 *{ margin:0; padding:0;}
-body{ background:#999;}
+body{ background:#999; overflow: hidden;}
 .Baymax{width:300px; height:600px; margin:20px auto auto auto;  position:relative; }
 .head{width:100px; height:75px; position:absolute; left:100px;  border-radius:50%; background:#FFF; box-shadow: 0px 6px 6px #888888,6px 6px 6px #ccc inset; z-index:100; }
 .eyes-l{width:15px; height:15px; border-radius:50%; background:#000; position:absolute; left:20px; top:35px;}
@@ -134,8 +134,6 @@ animation: eyeclose1 3s infinite 2s;
 10%{bottom:12px;}
 15%{bottom:20px;}
 20%{bottom:12px;}
-
-
 }
 
 .cover-x{
@@ -144,180 +142,71 @@ animation: eyeclose2 3s infinite 2s;
 -webkit-animation: eyeclose2 3s infinite 2s;	/* Safari 和 Chrome */
 }
 
-img{
-	width: 30px;
-	height: 30px;
-}
-.img1{
+#flower{
 	position: absolute;
-	top: 470px;
-	left: 440px;
-}
-.img2{
-	position: absolute;
-	top: 470px;
-	left: 475px;
-}
-.img3{
-	position: absolute;
-	top: 470px;
-	left: 510px;
+	width: 100%;
+	height: 100%;
+	margin-top: -5%; 
+	animation: move 4s ease-in-out infinite;
+	-moz-animation: move 4s ease-in-out infinite;	
+	-webkit-animation: move 4s ease-in-out infinite;	
 }
 
-.img4{
-	position: absolute;
-	top: 505px;
-	left: 440px;
-}
-.img5{
-	position: absolute;
-	top: 540px;
-	left: 440px;
-}
-.img6{
-	position: absolute;
-	top: 540px;
-	left: 475px;
-}
-.img7{
-	position: absolute;
-	top: 540px;
-	left: 510px;
-}
-.img8{
-	position: absolute;
-	top: 575px;
-	left: 510px;
-}
-.img9{
-	position: absolute;
-	top: 610px;
-	left: 510px;
-}
-.img10{
-	position: absolute;
-	top: 610px;
-	left: 475px;
-}
-.img11{
-	position: absolute;
-	top: 610px;
-	left: 440px;
-}
-.img12{
-	position: absolute;
-	top: 470px;
-	left: 580px;
-}
-.img13{
-	position: absolute;
-	top: 470px;
-	left: 615px;
-}
-.img14{
-	position: absolute;
-	top: 470px;
-	left: 650px;
-}
-.img15{
-	position: absolute;
-	top: 505px;
-	left: 650px;
-}
-.img16{
-	position: absolute;
-	top: 540px;
-	left: 650px;
-}
-.img17{
-	position: absolute;
-	top: 540px;
-	left: 615px;
-}
-.img18{
-	position: absolute;
-	top: 540px;
-	left: 580px;
-}
-.img19{
-	position: absolute;
-	top: 575px;
-	left: 580px;
-}
-.img20{
-	position: absolute;
-	top: 610px;
-	left: 580px;
-}
-.img21{
-	position: absolute;
-	top: 610px;
-	left: 615px;
-}
-.img22{
-	position: absolute;
-	top: 610px;
-	left: 650px;
-}
-.img23{
-	position: absolute;
-	top: 610px;
-	left: 720px;
-}
-.img24{
-	position: absolute;
-	top: 470px;
-	left: 720px;
-}
-.img25{
-	position: absolute;
-	top: 470px;
-	left: 755px;
-}
-.img26{
-	position: absolute;
-	top: 470px;
-	left: 790px;
-}
-.img27{
-	position: absolute;
-	top: 505px;
-	left: 720px;
-}
-.img28{
-	position: absolute;
-	top: 540px;
-	left: 720px;
-}
-.img29{
-	position: absolute;
-	top: 575px;
-	left: 720px;
-}
-.img30{
-	position: absolute;
-	top: 505px;
-	left: 790px;
-}
-.img31{
-	position: absolute;
-	top: 540px;
-	left: 790px;
-}
-.img32{
-	position: absolute;
-	top: 575px;
-	left: 790px;
+@keyframes move
+{
+0% {left:0%;}
+50%{left:60%;}
+100%{left:0%;}
 }
 
-.img33{
-	position: absolute;
-	top: 610px;
-	left: 790px;
+@-moz-keyframes move
+{
+0% {left:0%;}
+50%{left:60%;}
+100%{left:0%;}
 }
-.img34{
-	position: absolute;
-	top: 610px;
-	left: 755px;
+
+@-webkit-keyframes move 
+{
+0% {left:0%;}
+50%{left:60%;}
+100%{left:0%;}
 }
+
+img{width: 30px;height: 30px;}
+
+.img1{position: absolute;top: 70px;left: 140px;}
+.img2{position: absolute;top: 70px;left: 175px;}
+.img3{position: absolute;top: 70px;left: 210px;}
+.img4{position: absolute;top: 105px;left: 140px;}
+.img5{position: absolute;top: 140px;left: 140px;}
+.img6{position: absolute;top: 140px;left: 175px;}
+.img7{position: absolute;top: 140px;left: 210px;}
+.img8{position: absolute;top: 175px;left: 210px;}
+.img9{position: absolute;top: 210px;left: 210px;}
+.img10{position: absolute;top: 210px;left: 175px;}
+.img11{position: absolute;top: 210px;left: 140px;}
+.img12{position: absolute;top: 70px;left: 280px;}
+.img13{position: absolute;top: 70px;left: 315px;}
+.img14{position: absolute;top: 70px;left: 350px;}
+.img15{position: absolute;top: 105px;left: 350px;}
+.img16{position: absolute;top: 140px;left: 350px;}
+.img17{position: absolute;top: 140px;left: 315px;}
+.img18{position: absolute;top: 140px;left: 280px;}
+.img19{position: absolute;top: 175px;left: 280px;}
+.img20{position: absolute;top: 210px;left: 280px;}
+.img21{position: absolute;top: 210px;left: 315px;}
+.img22{position: absolute;top: 210px;left: 350px;}
+.img23{position: absolute;top: 210px;left: 420px;}
+.img24{position: absolute;top: 70px;left: 420px;}
+.img25{position: absolute;top: 70px;left: 455px;}
+.img26{position: absolute;top: 70px;left: 490px;}
+.img27{position: absolute;top: 105px;left: 420px;}
+.img28{position: absolute;top: 140px;left: 420px;}
+.img29{position: absolute;top: 175px;left: 420px;}
+.img30{position: absolute;top: 105px;left: 490px;}
+.img31{position: absolute;top: 140px;left: 490px;}
+.img32{position: absolute;top: 175px;left: 490px;}
+.img33{position: absolute;top: 210px;left: 490px;}
+.img34{position: absolute;top: 210px;left: 455px;}
 
